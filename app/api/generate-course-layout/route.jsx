@@ -6,6 +6,8 @@ import {
 } from '@google/genai';
 import { NextResponse } from 'next/server';
 import axios from "axios"
+import {ai} from "../../../lib/aiClient.js"
+
 const PROMPT=`Generate a Learning Course based on the following details.
 Make sure to add:
 Course Name
@@ -44,9 +46,7 @@ Output Format (in JSON):
   }
 }`
 
-export  const ai = new GoogleGenAI({
-    apiKey: process.env.GEMINI_API_KEY,
-});
+
 
 export async function POST(req) {
     const {courseId,...formData}=await req.json();
