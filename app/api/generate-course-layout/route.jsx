@@ -13,7 +13,7 @@ Make sure to add:
 Course Name
 Course Description
 Course Banner Image Prompt (see details below)
-Chapter Name (in 3D format for Course Banner)
+Chapter Name
 Topics under each chapter
 Duration for each chapter
 
